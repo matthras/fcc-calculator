@@ -1,0 +1,9 @@
+body {
+  background: #FFFFF0;
+}
+
+#calContainer {
+  background: grey;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px;
+}
