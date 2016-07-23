@@ -10,6 +10,6 @@ var pushone = function() {
 var evaluate = function() {
   // Combine all elements in displayArray into a single expression and evaluate it
 
-  // Update the
+  // Update the display
   document.getElementById('display').innerHTML()
 }
