@@ -1,26 +1,32 @@
 body {
-  background: #FFFFF0; }
+  background: #FFFFF0;
+}
 
 #calContainer {
   background: grey;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px;
   margin-top: 5em;
-  padding: 2%; }
+  padding: 2%;
+}
 
 .key {
   text-align: center;
   margin-bottom: 4%;
-  box-shadow: 1px 1px 1px 1px; }
+  box-shadow: 1px 1px 1px 1px;
+}
 
 .numberKey {
-  background-color: lightblue; }
+  background-color: lightblue;
+}
 
 .operatorKey {
-  background-color: plum; }
+  background-color: plum;
+}
 
 .actionKey {
-  background-color: red; }
+  background-color:red;
+}
 
 #display {
   text-align: right;
@@ -28,6 +34,5 @@ body {
   min-height: 4em;
   border-radius: 10px;
   box-shadow: 1px 1px 1px 1px;
-  margin-bottom: 1.5em; }
-
-/*# sourceMappingURL=calculator.css.map */
+  margin-bottom: 1.5em;
+}

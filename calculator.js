@@ -1,10 +1,9 @@
 var displayArray = []; // Array of string?
 
-var pushone = function() {
+function pushOne(input) {
   // When a button is pressed, push the corresponding value/operation into displayArray
-
-  // Update the display
-  document.getElementById('display').innerHTML()
+  displayArray.push(input);
+  displayUpdate();
 }
 
 var evaluate = function() {
@@ -12,4 +11,13 @@ var evaluate = function() {
 
   // Update the display
   document.getElementById('display').innerHTML()
+}
+
+function displayUpdate() {
+  document.getElementById('display').innerText = displayArray.join('');
+}
+
+function equals() {
+  document.getElementById('display').innerText = eval(displayArray.join(''));
+  displayArray = [];
 }
