@@ -12,61 +12,41 @@
         <div class="twelve columns" id="display">
         </div>
       </div>
-      <div class='row'> <!-- 1st Row -->
-        <div class='three columns key actionKey'>
-          <p>C</p>
-        </div>
-        <div class='three columns key actionKey'>
-          <p>M+</p>
-        </div>
-        <div class='three columns key actionKey'>
-          <p>M-</p>
-        </div>
-        <div class='three columns key operatorKey'>
-          <p>&div;</p>
-        </div>
+      <div class='row'>
+        <button class='threecolumns key actionKey' onClick="percent();">%</button>
+        <button class='threecolumns key actionKey' onClick="brackets('sqrt')">&radic;</button>
+        <button class='threecolumns key actionKey' onClick="brackets('square')">x&sup2;</button>
+        <button class='threecolumns key operatorKey' onClick="pushOne('*');">&sup1;/<sub>x</sub></button>
       </div>
-      <div class='row'> <!-- 2nd Row -->
-        <div class='three columns key numberKey' onClick="pushOne('7');">
-          <p>7</p>
-        </div>
-        <div class='three columns key numberKey' onClick="pushOne('8');">
-          <p>8</p>
-        </div>
-        <div class='three columns key numberKey' onClick="pushOne('9');">
-          <p>9</p>
-        </div>
-        <div class='three columns key operatorKey' onClick="pushOne('*');">
-          <p>*</p>
-        </div>
+      <div class='row'>
+        <button class='threecolumns key actionKey'>CE</button>
+        <button class='threecolumns key actionKey'>C</button>
+        <button class='threecolumns key actionKey'></button>
+        <button class='threecolumns key operatorKey' onClick="pushOne('*');">&div;</button>
       </div>
-      <div class='row'> <!-- 3rd Row -->
-        <div class='three columns key numberKey' onClick="pushOne('4');">
-          <p>4</p>
-        </div>
-        <div class='three columns key numberKey' onClick="pushOne('5');">
-          <p>5</p>
-        </div>
-        <div class='three columns key numberKey' onClick="pushOne('6');">
-          <p>6</p>
-        </div>
-        <div class='three columns key operatorKey' onClick="pushOne('-');">
-          <p>-</p>
-        </div>
+      <div class='row'>
+        <button class='threecolumns key actionKey' onClick="pushOne('7')">7</button>
+        <button class='threecolumns key actionKey' onClick="pushOne('8')">8</button>
+        <button class='threecolumns key actionKey' onClick="pushOne('9')">9</button>
+        <button class='threecolumns key operatorKey' onClick="pushOne('*');">&times;</button>
       </div>
-      <div class='row'> <!-- 4th Row -->
-        <div class='three columns key numberKey' onClick="pushOne('1');">
-          <p>1</p>
-        </div>
-        <div class='three columns key numberKey' onClick="pushOne('2');">
-          <p>2</p>
-        </div>
-        <div class='three columns key numberKey' onClick="pushOne('3');">
-          <p>3</p>
-        </div>
-        <div class='three columns key operatorKey' onClick="pushOne('+');">
-          <p>+</p>
-        </div>
+      <div class='row'>
+        <button class='threecolumns key numberKey' onClick="pushOne('4');">4</button>
+        <button class='threecolumns key numberKey' onClick="pushOne('5');">5</button>
+        <button class='threecolumns key numberKey' onClick="pushOne('6');">6</button>
+        <button class='threecolumns key operatorKey' onClick="pushOne('-');">-</button>
+      </div>
+      <div class='row'>
+        <button class='threecolumns key numberKey' onClick="pushOne('1');">1</button>
+        <button class='threecolumns key numberKey' onClick="pushOne('2');">2</button>
+        <button class='threecolumns key numberKey' onClick="pushOne('3');">3</button>
+        <button class='threecolumns key operatorKey' onClick="pushOne('-');">+</button>
+      </div>
+      <div class='row'>
+        <button class='threecolumns key numberKey' onClick="pushOne('');">&plusmn;</button>
+        <button class='threecolumns key numberKey' onClick="pushOne('0');">0</button>
+        <button class='threecolumns key numberKey' onClick="pushOne('.');">.</button>
+        <button class='threecolumns key operatorKey' onClick="equals();">=</button>
       </div>
     </div>
   </div>

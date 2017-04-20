@@ -17,6 +17,21 @@ function displayUpdate() {
   document.getElementById('display').innerText = displayArray.join('');
 }
 
+function brackets(action) {
+  displayArray.push(')')
+  displayArray.unshift('(')
+  switch(action) {
+    case 'square':
+      displayArray.unshift('Math.pow(');
+      displayArray.push(',2)');
+      break;
+    case 'sqrt'):
+      displayArray.unshift('sqrt');
+      break;
+  }
+  equals();
+}
+
 function equals() {
   document.getElementById('display').innerText = eval(displayArray.join(''));
   displayArray = [];
