@@ -20,6 +20,13 @@ module.exports = {
     {
       test: /\.html$/,
       loader: 'html-loader'
+    },
+    {
+      test: /\.js$/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['babel-preset-es2015'].map(require.resolve)
+      }
     }
     ]
   },
