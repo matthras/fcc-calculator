@@ -5,10 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
-  entry: ['./main.js', './main.scss'],
+  entry: ['./calculator.js', './calculator.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "index.js",
+    filename: "calculator.js",
     publicPath: '/'
   },
   module: {
@@ -26,13 +26,13 @@ module.exports = {
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin({
-      filename:'./index.css',
+      filename:'./calculator.css',
     }),
     new HtmlWebpackPlugin({
-      title: 'Insert Your Arbitrary Title Here',
-      filename: 'index.html',
-      template: 'main.html',
-      minify: {}
+      title: 'FreeCodeCamp Calculator',
+      filename: 'calculator.html',
+      template: 'calculator.html',
+      minify: {removeComments: true, collapseWhitespace: true, collapseInlingTagWhitespace: true}
     }),
     new OptimizeCssAssetsPlugin()
   ]
