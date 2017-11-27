@@ -39,7 +39,7 @@ module.exports = {
       title: 'FreeCodeCamp Calculator',
       filename: 'calculator.html',
       template: 'calculator.html',
-      minify: {removeComments: true, collapseWhitespace: true, collapseInlingTagWhitespace: true}
+      minify: {removeComments: true, collapseWhitespace: true, collapseInlineTagWhitespace: true}
     }),
     new OptimizeCssAssetsPlugin()
   ]

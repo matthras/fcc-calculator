@@ -1,24 +1,46 @@
 body {
-  background: #FFFFF0;
+  background: #000;
+  margin: 0;
+  padding: 0; 
 }
 
 #calContainer {
-  background: grey;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px 2px;
+  width: 50%;
+  margin-left: 25%;
+  background: black;
+  border: 1px solid purple;
+  //border-radius: 2px;
+  //box-shadow: 1px 1px 1px fuchsia;
   margin-top: 5em;
-  padding: 2%;
+}
+
+#calculationDisplay, #resultDisplay {
+  min-height: 1em;
+  margin: 1rem 1rem;
+}
+
+.testRow {
+  width: 100%;
+  display:block;
+  float: left;
+}
+
+.key2 {
+  display: inline-block;
+  background-color: green;
+  width: 25%;
 }
 
 .key {
   text-align: center;
-  margin-bottom: 4%;
-  box-shadow: 1px 1px 1px 1px;
+  border: 1px solid purple;
   font-weight: bold;
   font-size: 1em;
   min-height: 3em;
+  padding: 0;
+  width: 25%;
   & :active {
-    box-shadow: 0px 0px 0px 0px;
+    border: 1px solid fuchsia;
   }
 }
 
@@ -35,10 +57,10 @@ body {
 }
 
 #display {
+  width: 100%;
   text-align: right;
   background-color: ivory;
   min-height: 4em;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px;
+  // box-shadow: 1px 1px 1px 1px;
   margin-bottom: 1.5em;
 }
